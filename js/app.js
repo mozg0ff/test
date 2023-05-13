@@ -1,7 +1,6 @@
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
 
-
-
+if(ScrollSmoother.isTouch !==0) {
 	ScrollSmoother.create({
 		wrapper: '.wrapper',
 		content: '.content',
@@ -28,7 +27,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
 				trigger: item,
 				start: '-850',
 				end: '-100',
-				// scrub: true
+				scrub: true
 			}
 		})
 	})
@@ -46,5 +45,8 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
 			}
 		})
 	})
+}
+
+
 
 
