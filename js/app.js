@@ -28,7 +28,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
 				trigger: item,
 				start: '-850',
 				end: '-100',
-				scrub: true
+				// scrub: true
 			}
 		})
 	})
